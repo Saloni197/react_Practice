@@ -12,13 +12,35 @@ import Hero from './component/Hero';
 import ErrorBoundary from './component/ErrorBoundary';
 import ClickCounter from './component/clickCounter';
 import HoverCounter from './component/HoverCounter';
+import ClickCounterTwo from './clickCounterTwo';
+import HoverCounterTwo from './hoverCounterTwo';
+import User from './component/User';
+import Counter from './component/counter';
+import ComponentF from './componentF';
+import { UserProvider } from './userContext';
+
 
 function App() {
   return (
     <div className="App">
-    <ClickCounter/>
-    <HoverCounter/>
-    {/* <ErrorBoundary>
+    {/* <UserProvider value = "Kavita">
+    <ComponentF/>
+    </UserProvider> */}
+    {/* <Counter render ={(count,clickHandler)=>(
+       <ClickCounterTwo count = {count} clickHandler = {clickHandler}/>
+       )}
+
+    />
+    <Counter render ={(count,clickHandler)=>(
+       <HoverCounterTwo count = {count} clickHandler = {clickHandler}/>
+       )}
+    /> */}
+     {/* <ClickCounterTwo/>
+     <HoverCounterTwo/>
+     <User render = {(isLoggedIn)=>isLoggedIn?'Kavita':'Guests'}/> */}
+    {/* <ClickCounter/>
+    <HoverCounter/> */}
+    <ErrorBoundary>
     <Hero HeroName = 'Superman'/>
     </ErrorBoundary>
 
@@ -28,7 +50,7 @@ function App() {
 
    <ErrorBoundary>
     <Hero HeroName = 'Joker'/>
-   </ErrorBoundary> */}
+   </ErrorBoundary>
     {/* <PortalDemo/> */}
     {/* <RefsDemo/> */}
     {/* <ParentComp/> */}

@@ -8,28 +8,22 @@ class ErrorBoundary extends Component{
             hasError : false
         }
     }
-    setErrorTrue = ()=>{
-        this.setState({
-            hasError : true
-        })
-    }
+
     static getDerivedStateFromError(Error){
         return{
                 hasError : true
               }
     }
-    componentDidCatch(error,info){
-        console.log(error)
-        console.log(info)
-    }
-    componentDidMount(){
-        this.setErrorTrue()
-    }
+    // componentDidCatch(error,info){
+    //     console.log(error)
+    //     console.log(info)
+    // }
+    
     render(){
 
         console.log(this.state.hasError)
        if(this.state.hasError){
-           <h1>Something Get Wrong </h1>
+           return <h1>Something Get Wrong </h1>
        }
         return this.props.children
     }
