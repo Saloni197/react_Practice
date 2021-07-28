@@ -14,6 +14,12 @@ import CounterOne from './components/CounterOne';
 import CounterTwo from './components/CounterTwo';
 import CounterThree from './components/CounterThree';
 import DataFatchingTwo from './components/DataFatchingTwo';
+import DataFatchReducer from './components/DataFatchReducer';
+import CounterMemo from './components/CounterMemo';
+import FocusRefHook from './components/FocusRefHook';
+import HookRefTimer from './components/HookRefTimer';
+import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
@@ -39,7 +45,13 @@ function App() {
      {/* <CounterOne/> */}
      {/* <CounterTwo/> */}
      {/* <CounterThree/> */}
-     <DataFatchingTwo/>
+     {/* <DataFatchingTwo/> */}
+     {/* <DataFatchReducer/> */}
+     {/* <CounterMemo/> */}
+     {/* <FocusRefHook/> */}
+     {/* <HookRefTimer/> */}
+     <DocTitleOne/>
+     <DocTitleTwo/>
     </div>
   );
 }
